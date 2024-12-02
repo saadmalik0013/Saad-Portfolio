@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+        <style>
+            * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgba(0, 0, 33);
+            color: white;
+            font-family: "Poppins", serif;
+        }
+        .container-box{
+            background: #000;
+            height: 200vh;
+            color: #fff;
+        }
+        h1{
+            text-align: center;
+            padding-top: 100px;
+        }
+        h1::after{
+            content: "";
+            background: rgb(0, 0, 255);
+            display: block;
+            height: 3px;
+            width: 130px;
+            margin: 20px auto 58px;
+        }
+        .service .icon{
+            font-size: 30px;
+            margin: 20px auto;
+            padding: 18px;
+            height: 70px;
+            width: 70px;
+            border: 1px solid #fff;
+            border-radius: 50%;
+            color: #fff;
+        }
+        .service p{
+            font-size: 15px;
+            margin-top: 10px;
+            color: gray;
+            padding: 20px;
+        }
+        .service span{
+            color: purple;
+            transition: .5s;
+        }
+        .service .text:hover{
+        background: linear-gradient(rgba(0,0,0,0.5),purple);
+        cursor: pointer;
+        color: rgba(0, 0, 33);
+        box-shadow: -5px 5px 10px 0 rgba(0, 0,0.5);
+        transition: 0.5s;
+        }
+        .service .text:hover .icon{
+            border: 1px solid purple;
+            color: purple;
+        }
+        .service .text:hover p{
+            color: #fff;
+        }
+        .service .text:hover span{
+            color: #fff;
+        }
+        </style>
+</head>
+<body>
+    <section class="service">
+        <div class="content-box">
+            <div class="container">
+                <div class="row-service"></div>
+                <h1>Our Services</h1>
+                <div class="text">
+                    <div class="icon">
+                        <i class="fa-solid fa-paintbrush"></i>
+                    </div>
+                    <h3>Web <span>Designer</span></h3>
+                    <p>Hi, My Name is Saad Malik And I am a Passionate Web Developer.</p>
+                </div>
+                <div class="text">
+                    <div class="icon">
+                        <i class="fa-solid fa-cogs"></i>
+                    </div>
+                    <h3>HTML <span>Designer</span></h3>
+                    <p>I worked as a HTML developer from 2021 to 2022, specializing in building responsive and user-friendly web pages. During this time, I honed my skills in HTML to create seamless web experiences.</p>
+                </div>
+                <div class="text">
+                    <div class="icon">
+                        <i class="fa-solid fa-cogs"></i>
+                    </div>
+                    <h3>CSS <span>Designer</span></h3>
+                    <p>I worked as a CSS developer from 2022 to 2023, focusing on designing visually appealing and responsive layouts. During this period, I enhanced my expertise in advanced CSS techniques, including Flexbox, Grid, and animations.</p>
+                </div>
+                <div class="text">
+                    <div class="icon">
+                        <i class="fa-solid fa-cogs"></i>
+                    </div>
+                    <h3>JavaScript <span>Designer</span></h3>
+                    <p>I worked as a Node.js developer from 2023 to 2024, building scalable server-side applications and APIs. During this time, I gained expertise in JavaScript, Express.js, and database integration for efficient backend development.</p>
+                </div>
+                <div class="text">
+                    <div class="icon">
+                        <i class="fa-solid fa-cogs"></i>
+                    </div>
+                    <h3>Graphic <span>Designer</span></h3>
+                    <p>I worked as a Graphic Designer from 2020 to 2024, creating visually compelling designs for digital and print media. During this time, I developed expertise in tools like Adobe Photoshop, Illustrator, and InDesign to deliver creative solutions for various clients.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
