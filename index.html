@@ -14,6 +14,7 @@
         * {
             margin: 0;
             padding: 0;
+            box-sizing: border-box;
         }
 
         body {
@@ -24,11 +25,20 @@
 
         nav {
             display: flex;
-            justify-content: space-around;
+            justify-content: space-between;
             align-items: center;
             height: 50px;
             background-color: rgba(18, 18, 68);
+            padding: 0 20px;
             flex-wrap: wrap;
+        }
+
+        nav .left {
+            font-size: 1.5rem;
+        }
+
+        nav .right {
+            display: flex;
         }
 
         nav ul {
@@ -38,16 +48,23 @@
 
         nav ul li {
             list-style: none;
-            margin: 0 23px;
+            margin: 0 15px;
         }
 
         nav ul li a {
             color: white;
             text-decoration: none;
+            font-size: 1rem;
         }
 
         nav ul li a:hover {
             color: rgb(153, 153, 226);
+        }
+
+        nav .menu-toggle {
+            display: none;
+            font-size: 2rem;
+            color: white;
         }
 
         main hr {
@@ -99,7 +116,7 @@
         .secondsection {
             max-width: 80vw;
             margin: auto;
-            height: 80vh;
+            height: auto;
         }
 
         .secondsection h1 {
@@ -176,14 +193,24 @@
 
         /* Mobile Responsiveness */
         @media (max-width: 768px) {
-            nav {
+            nav ul {
+                display: none;
+                width: 100%;
                 flex-direction: column;
-                align-items: flex-start;
+                align-items: center;
             }
 
-            nav ul {
-                flex-direction: column;
-                margin-top: 20px;
+            nav .menu-toggle {
+                display: block;
+                cursor: pointer;
+            }
+
+            nav ul li {
+                margin: 10px 0;
+            }
+
+            nav.active ul {
+                display: flex;
             }
 
             .firstsection {
@@ -193,6 +220,7 @@
 
             .leftsection {
                 font-size: 2rem;
+                margin-bottom: 20px;
             }
 
             .rightsection {
@@ -229,6 +257,18 @@
                 width: 100%;
                 text-align: center;
             }
+
+            .image-top {
+                width: 30px;
+            }
+
+            .vertical-title {
+                font-size: 14px;
+            }
+
+            .vertical-desc {
+                font-size: 12px;
+            }
         }
 
         @media (max-width: 480px) {
@@ -253,12 +293,11 @@
             }
         }
     </style>
-
 </head>
 
 <body>
     <header>
-        <nav>
+        <nav id="navbar">
             <div class="left">Saad Malik</div>
             <div class="right">
                 <ul>
@@ -267,6 +306,7 @@
                     <li><a href="services.html">Services</a></li>
                     <li><a href="contact.html">Contact Me</a></li>
                 </ul>
+                <div class="menu-toggle" onclick="toggleMenu()">&#9776;</div>
             </div>
         </nav>
     </header>
@@ -276,13 +316,13 @@
             <div class="leftsection">
                 Hi, My Name is <span class="purple">Saad Malik</span>
                 <div>And I am a Passionate</div>
-
                 <span id="element"></span>
             </div>
             <div class="rightsection">
                 <img src="Images/web.png" alt="">
             </div>
-        </section> <hr>
+        </section>
+        <hr>
         <section class="secondsection">
             <span class="gray">What I Have Done so Far</span>
             <h1>Work Experience</h1>
@@ -294,82 +334,10 @@
                         HTML Developer (2021-2022)
                     </div>
                     <div class="vertical-desc">
-                        I worked as a HTML developer from 2021 to 2022, specializing in building responsive and user-friendly web pages. During this time, I honed my skills in HTML to create seamless web experiences.
+                        I worked as a HTML developer from 2021 to 2022, specializing in building responsive and user-friendly web pages.
                     </div>
                 </div>
                 <div class="vertical">
                     <img class="image-top" src="Images/css.png" alt="">
                     <div class="vertical-title">
-                        CSS Developer (2022-2023)
-                    </div>
-                    <div class="vertical-desc">
-                        I worked as a CSS developer from 2022 to 2023, focusing on designing visually appealing and responsive layouts. During this period, I enhanced my expertise in advanced CSS techniques, including Flexbox, Grid, and animations.
-                    </div>
-                </div>
-                <div class="vertical">
-                    <img class="image-top" src="Images/java.png" alt="">
-                    <div class="vertical-title">
-                        Node.js Developer (2023-2024)
-                    </div>
-                    <div class="vertical-desc">
-                        I worked as a Node.js developer from 2023 to 2024, building scalable server-side applications and APIs. During this time, I gained expertise in JavaScript, Express.js, and database integration for efficient backend development.
-                    </div>
-                </div>
-                <div class="vertical">
-                    <img class="image-top" src="Images/graphic.jpg" alt="">
-                    <div class="vertical-title">
-                        Graphic Designer (2020-2024)
-                    </div>
-                    <div class="vertical-desc">
-                        I worked as a Graphic Designer from 2020 to 2024, creating visually compelling designs for digital and print media. During this time, I developed expertise in tools like Adobe Photoshop, Illustrator, and InDesign to deliver creative solutions for various clients.
-                    </div>
-                </div>
-            </div>
-
-        </section>
-
-    </main>
-    <footer>
-        <div class="footer">
-            <div class="first">
-                <h3>Saad's Developer Portfolio</h3>
-            </div>
-            <div class="second">
-                <ul>
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>JavaScript</li>
-                    <li>P.H.P</li>
-                </ul>
-            </div>
-            <div class="third">
-                <ul>
-                    <li>Graphic Designing</li>
-                    <li>Flyers</li>
-                    <li>Posters</li>
-                    <li>Business Cards</li>
-                </ul>
-            </div>
-            <div class="fourth">
-                <ul>
-                    <li>Network Marketing</li>
-                    <li>Digital Marketing</li>
-                    <li>Affiliate Marketing</li>
-
-                </ul>
-            </div>
-        </div>
-        <div class="footer-rights">
-            Copyrights &#169; Saad's Portfolio All rights reserved
-        </div>
-    </footer>
-    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-    <script>
-        var typed = new Typed('#element', {
-            strings: ['Web Developer', 'Wordpress Designer', 'Graphic Designer', 'Digital Marketer', 'Affiliate Marketer'],
-            typeSpeed: 50,
-        });
-    </script>
-</body>
-
-</html>
+                        CSS Developer
