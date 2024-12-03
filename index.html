@@ -10,11 +10,13 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
+        <a href="about.html"></a>
+        <a href="services.html"></a>
+        <a href="contact.html"></a>
     <style>
         * {
             margin: 0;
             padding: 0;
-            box-sizing: border-box;
         }
 
         body {
@@ -22,282 +24,134 @@
             color: white;
             font-family: "Poppins", serif;
         }
-
-        nav {
+        nav{
             display: flex;
-            justify-content: space-between;
+            justify-content: space-around;
             align-items: center;
             height: 50px;
             background-color: rgba(18, 18, 68);
-            padding: 0 20px;
-            flex-wrap: wrap;
         }
-
-        nav .left {
-            font-size: 1.5rem;
-        }
-
-        nav .right {
-            display: flex;
-        }
-
-        nav ul {
+        nav ul{
             display: flex;
             justify-content: center;
         }
-
-        nav ul li {
+        nav ul li{
             list-style: none;
-            margin: 0 15px;
+            margin: 0 23px;
         }
-
-        nav ul li a {
-            color: white;
-            text-decoration: none;
-            font-size: 1rem;
-        }
-
-        nav ul li a:hover {
-            color: rgb(153, 153, 226);
-        }
-
-        nav .menu-toggle {
-            display: none;
-            font-size: 2rem;
-            color: white;
-        }
-
+       nav ul li a{
+        color: white;
+        text-decoration: none;
+       }
+       nav ul li a:hover{
+        color: rgb(153, 153, 226);
+    }
         main hr {
             border: 1;
             background: #9c97f1;
             height: 1.2px;
             margin: 60px 84px;
         }
-
-        .left {
+        .left{
             font-size: 1.5rem;
         }
-
-        .firstsection {
+        .firstsection{
             display: flex;
             justify-content: space-around;
             margin: 80px 0;
-            flex-wrap: wrap;
-            text-align: center;
         }
-
-        .leftsection {
+        .leftsection{
             margin: 30px;
-            font-size: 2.5rem;
-            align-items: center;
+           font-size: 2.5rem;
+           align-items: center;
+            
         }
-
-        .rightsection {
+        .rightsection{
             width: 30%;
         }
-
-        .rightsection img {
+        .rightsection img{
             width: 100%;
             margin: -30px 0;
         }
-
-        .purple {
+        .purple{
             color: rgb(235, 15, 235);
         }
-
-        .gray {
+        .gray{
             color: gray;
         }
-
-        #element {
-            color: rgb(235, 15, 235);
+        #element{
+         color: rgb(235, 15, 235);  
         }
-
-        .secondsection {
-            max-width: 80vw;
-            margin: auto;
-            height: auto;
+        .secondsection{
+           max-width: 80vw;
+           margin: auto;
+           height: 80vh;
         }
-
-        .secondsection h1 {
+        .secondsection h1{
             font-size: 1.5rem;
         }
-
         .secondsection .box {
             background: white;
             width: 77vw;
             height: 2px;
             margin: 56px 0;
             display: flex;
-            flex-wrap: wrap;
-            justify-content: space-evenly;
         }
-
         .secondsection .vertical {
             height: 93px;
             width: 1px;
             background-color: white;
             margin: 0 100px;
-            position: relative;
-            display: flex;
-            justify-content: center;
+          
         }
-
-        .image-top {
+        .image-top{
             width: 34px;
             position: relative;
             top: -32px;
             left: -9px;
         }
-
-        .vertical-title {
+        .vertical-title{
             font-size: 15px;
             position: relative;
             top: 75px;
             width: 150px;
         }
-
-        .vertical-desc {
-            position: relative;
-            top: 86px;
-            color: gray;
-            width: 150px;
-            font-size: 10px;
+        .vertical-desc{
+           position: relative;
+           top: 86px;
+           color: gray;
+           width: 150px;
+           font-size: 10px;
         }
-
-        footer {
+        footer{
             background-color: #0e0e1a;
+            
         }
-
-        .footer {
+        .footer{
             display: flex;
             padding: 23px 122px;
             justify-content: space-evenly;
-            flex-wrap: wrap;
         }
-
-        .footer ul {
+        .footer ul{
             list-style: none;
             color: gray;
         }
-
-        .footer > div {
+        .footer > div{
             width: 123px;
+            
         }
-
-        footer .footer-rights {
+        footer .footer-rights{
             text-align: center;
             color: gray;
             padding: 12px;
         }
-
-        /* Mobile Responsiveness */
-        @media (max-width: 768px) {
-            nav ul {
-                display: none;
-                width: 100%;
-                flex-direction: column;
-                align-items: center;
-            }
-
-            nav .menu-toggle {
-                display: block;
-                cursor: pointer;
-            }
-
-            nav ul li {
-                margin: 10px 0;
-            }
-
-            nav.active ul {
-                display: flex;
-            }
-
-            .firstsection {
-                flex-direction: column;
-                text-align: center;
-            }
-
-            .leftsection {
-                font-size: 2rem;
-                margin-bottom: 20px;
-            }
-
-            .rightsection {
-                width: 80%;
-                margin-top: 20px;
-            }
-
-            .secondsection {
-                height: auto;
-                margin: 0 20px;
-            }
-
-            .secondsection .box {
-                flex-direction: column;
-                align-items: center;
-                margin-top: 30px;
-            }
-
-            .secondsection .vertical {
-                width: 90%;
-                margin: 15px 0;
-            }
-
-            .footer {
-                flex-direction: column;
-                padding: 15px 30px;
-            }
-
-            .footer ul {
-                margin-bottom: 15px;
-            }
-
-            .footer > div {
-                width: 100%;
-                text-align: center;
-            }
-
-            .image-top {
-                width: 30px;
-            }
-
-            .vertical-title {
-                font-size: 14px;
-            }
-
-            .vertical-desc {
-                font-size: 12px;
-            }
-        }
-
-        @media (max-width: 480px) {
-            .leftsection {
-                font-size: 1.5rem;
-            }
-
-            .rightsection img {
-                width: 80%;
-            }
-
-            .image-top {
-                width: 28px;
-            }
-
-            .vertical-title {
-                font-size: 12px;
-            }
-
-            .vertical-desc {
-                font-size: 9px;
-            }
-        }
     </style>
+
 </head>
 
 <body>
     <header>
-        <nav id="navbar">
+        <nav>
             <div class="left">Saad Malik</div>
             <div class="right">
                 <ul>
@@ -306,7 +160,6 @@
                     <li><a href="services.html">Services</a></li>
                     <li><a href="contact.html">Contact Me</a></li>
                 </ul>
-                <div class="menu-toggle" onclick="toggleMenu()">&#9776;</div>
             </div>
         </nav>
     </header>
@@ -316,13 +169,13 @@
             <div class="leftsection">
                 Hi, My Name is <span class="purple">Saad Malik</span>
                 <div>And I am a Passionate</div>
+                
                 <span id="element"></span>
             </div>
             <div class="rightsection">
-                <img src="Images/web.png" alt="">
+        <img src="Images/web.png" alt="">
             </div>
-        </section>
-        <hr>
+        </section> <hr>
         <section class="secondsection">
             <span class="gray">What I Have Done so Far</span>
             <h1>Work Experience</h1>
@@ -334,7 +187,7 @@
                         HTML Developer (2021-2022)
                     </div>
                     <div class="vertical-desc">
-                        I worked as a HTML developer from 2021 to 2022, specializing in building responsive and user-friendly web pages.
+                        I worked as a HTML developer from 2021 to 2022, specializing in building responsive and user-friendly web pages. During this time, I honed my skills in HTML to create seamless web experiences.
                     </div>
                 </div>
                 <div class="vertical">
@@ -343,7 +196,7 @@
                         CSS Developer (2022-2023)
                     </div>
                     <div class="vertical-desc">
-                        I worked as a CSS developer from 2022 to 2023, focusing on designing responsive layouts.
+                        I worked as a CSS developer from 2022 to 2023, focusing on designing visually appealing and responsive layouts. During this period, I enhanced my expertise in advanced CSS techniques, including Flexbox, Grid, and animations.
                     </div>
                 </div>
                 <div class="vertical">
@@ -352,7 +205,7 @@
                         Node.js Developer (2023-2024)
                     </div>
                     <div class="vertical-desc">
-                        I worked as a Node.js developer from 2023 to 2024, building scalable server-side applications.
+                        I worked as a Node.js developer from 2023 to 2024, building scalable server-side applications and APIs. During this time, I gained expertise in JavaScript, Express.js, and database integration for efficient backend development.
                     </div>
                 </div>
                 <div class="vertical">
@@ -361,60 +214,56 @@
                         Graphic Designer (2020-2024)
                     </div>
                     <div class="vertical-desc">
-                        I worked as a Graphic Designer from 2020 to 2024, creating visually compelling designs for digital and print media.
+                        I worked as a Graphic Designer from 2020 to 2024, creating visually compelling designs for digital and print media. During this time, I developed expertise in tools like Adobe Photoshop, Illustrator, and InDesign to deliver creative solutions for various clients.
                     </div>
                 </div>
             </div>
+            
         </section>
 
     </main>
-
     <footer>
         <div class="footer">
             <div class="first">
                 <h3>Saad's Developer Portfolio</h3>
             </div>
             <div class="second">
-                <ul>
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>JavaScript</li>
-                    <li>P.H.P</li>
-                </ul>
+           <ul>    
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>P.H.P</li>
+        </ul>       
             </div>
             <div class="third">
-                <ul>
+                <ul>    
                     <li>Graphic Designing</li>
                     <li>Flyers</li>
                     <li>Posters</li>
                     <li>Business Cards</li>
-                </ul>
+            </ul>  
             </div>
             <div class="fourth">
-                <ul>
+                <ul>    
                     <li>Network Marketing</li>
                     <li>Digital Marketing</li>
                     <li>Affiliate Marketing</li>
-                </ul>
+                    
+            </ul>  
             </div>
         </div>
         <div class="footer-rights">
-            Copyrights &#169; Saad's Portfolio All rights reserved
+         Copyrights &#169; Saad's Portfolio All rights reserved
         </div>
     </footer>
-
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-    <script>
-        var typed = new Typed('#element', {
-            strings: ['Web Developer', 'Wordpress Designer', 'Graphic Designer', 'Digital Marketer', 'Affiliate Marketer'],
-            typeSpeed: 50,
-        });
-
-        function toggleMenu() {
-            var navbar = document.getElementById('navbar');
-            navbar.classList.toggle('active');
-        }
-    </script>
+    <!-- Setup and start animation! -->
+  <script>
+    var typed = new Typed('#element', {
+      strings: ['Web Developer', 'Wordpress Designer', 'Graphic Designer' ,'Digital Marketer' , 'Affiliate Marketer'],
+      typeSpeed: 50,
+    });
+  </script>
 </body>
 
 </html>
